@@ -18,30 +18,27 @@ var date=new Date();
 document.querySelector(".date p").innerHTML=date.getUTCFullYear()+"-"+months[date.getUTCMonth()]+"-"+date.getUTCDate()+"-"+days[date.getUTCDay()]
 
 // GET-STRATED-SECTION
-var shortText=document.getElementsByClassName("short-text");
-const mediaQuery = window.matchMedia('(max-width: 770px)')
-shortText.addListener(ChageDisplay)
+// var shortText=document.getElementsByClassName("short-text");
+// const mediaQuery = window.matchMedia('(max-width: 770px)')
+// shortText.addListener(ChangeDisplay)
 
-function ChangeDisplay(mediaQuery){
-    if(!mediaQuery.matches){
-        for(var i=0;i<shortText.length;i++){
-            shortText[i].style.display="none"
-        }
-    }
+// function ChangeDisplay(mediaQuery){
+//     if(!mediaQuery.matches){
+//         for(var i=0;i<shortText.length;i++){
+//             shortText[i].style.display="none"
+//         }
+//     }
+// }
+ buttonattributes=document.querySelector("button.feedback-form").attributes
+console.log(buttonattributes)
+// var textarea=document.querySelector("textarea.feedback-form")
+document.querySelector("textarea.feedback-form").addEventListener("click",function(){
+    console.log(typeof(buttonattributes))
+    delete buttonattributes.disabled
+    console.log(buttonattributes)
 }
-// media query event handler
-// if (matchMedia) {
-//     const mq = window.matchMedia("(max-width: 770px)");
-//     mq.addListener(WidthChange);
-//     WidthChange(mq);
-//     }
-    
-//     // media query change
-//     function WidthChange(mq) {
-//     if (mq.matches) {
-//     // window width is at least 500px
-//     } else {
-//     // window width is less than 500px
-//     }
-    
-//     }
+)
+function changeDisplay(){
+    document.querySelector("button.feedback-button").style.display="none"
+    document.querySelector("form.feedback-form").style.display="block"
+}
