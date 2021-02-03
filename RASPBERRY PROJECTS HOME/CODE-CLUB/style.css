@@ -19,6 +19,7 @@ header .logo{
     margin: auto 10px;
   
 }
+
 header hr{
 border-top: 2px solid black; 
 transform: rotate(90deg);
@@ -323,6 +324,7 @@ button.feedback-button{
     padding: 5px 10px;
     font-size: 1rem;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 button.feedback-button:hover{
     background-color: #FFF;
@@ -412,10 +414,14 @@ textarea.feedback-form:focus ~ button.feedback-form{
         top:-25px;
         
     }
+    .logo .logo-link:hover{
+        color: red !important;
+    }
     .logo .logo-pic{
         height: 70%;
         font-size: 3rem;
         margin-right: 10px;
+        color:#ffff00;
     }
     .navbar ul{
         position: relative;
