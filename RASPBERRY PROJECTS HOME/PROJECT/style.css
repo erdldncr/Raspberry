@@ -90,10 +90,10 @@ section.find-A-Project div.container{
 .find-A-Project p{
    margin: 15px;
 }
-.dropdown{
+.row{
     margin-top: 5px;
 }
-.dropdown select{
+.row select{
     background-color: transparent;
     text-align: left;
     color: rgb(204,204,204);
@@ -103,7 +103,9 @@ section.find-A-Project div.container{
     margin-right: 15px;
     padding: 10px 60px 10px 10px;
 }
-
+.a{
+    display: none !important;
+}
 
 /* MEDIA QUERY */
 /* MEDIUM SCREEN */
@@ -122,7 +124,12 @@ section.find-A-Project div.container{
       }
       .navbar li{
         margin-right: 25px;
-    }  
+    }
+     .row p{
+        text-align: center;
+        font-size: 1rem;
+    }
+    
 
 }
 
@@ -167,6 +174,7 @@ section.find-A-Project div.container{
     padding: 10px;
     width: 100%;
   }
+
 
 
 }
