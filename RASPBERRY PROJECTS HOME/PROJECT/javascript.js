@@ -17,29 +17,28 @@ var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'A
 var date=new Date();
 document.querySelector(".date p").innerHTML=date.getUTCFullYear()+"-"+months[date.getUTCMonth()]+"-"+date.getUTCDate()+"-"+days[date.getUTCDay()]
 
-
+////////5th Of Feb////
 function myFunction(x) {
     if (x.matches) { // If media query matches
-      document.getElementsByClassName("medium-dropdown")[0].innerHTML += "🔻 ";
+      document.getElementsByClassName("medium-dropdown")[0].innerHTML += "<i style=\" font-size:32px\" class=\"fas fa-sort-down\"></i> "
       document.getElementsByClassName("row")[1].style.display = "flex";
       document.getElementsByClassName("row")[1].style.flexDirection = "column";
+      [...document.getElementsByClassName("sub-medium-dropdown")].forEach(element=>element.classList.add("a"))
+      document.getElementById("a").addEventListener("click",changeFont)
       
     } else {
         document.getElementsByClassName("medium-dropdown")[0].innerHTML = "Find a Project:";
         document.getElementsByClassName("row")[1].style.display = "flex";
         document.getElementsByClassName("row")[1].style.flexDirection = "row";
+        [...document.getElementsByClassName("sub-medium-dropdown")].forEach(element=>element.classList.remove("a"))
     }
   }
   
   var x = window.matchMedia("(max-width: 700px)")
   myFunction(x) // Call listener function at run time
   x.addListener(myFunction) // Attach listener function on state changes
-  
 
-  document.getElementsByClassName("medium-dropdown")[0].addEventListener("mouseover",addClass)
-  //document.getElementsByClassName("sub-medium-dropdown")[0].style.display="none"
-  function addClass(x){
-      if(x.matches){
-          document.getElementsByClassName("sub-medium-dropdown")[0].classList.add("a")
-      }
+  function changeFont(){
+      return [...document.getElementsByClassName("sub-medium-dropdown")].forEach(element=>element.classList.toggle("a"))
   }
+
