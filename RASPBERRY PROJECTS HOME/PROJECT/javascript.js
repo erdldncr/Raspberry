@@ -41,4 +41,28 @@ function myFunction(x) {
   function changeFont(){
       return [...document.getElementsByClassName("sub-medium-dropdown")].forEach(element=>element.classList.toggle("a"))
   }
+  
+let projectBgColor=Math.floor(Math.random()*(256*256*256))
+let projectPColor=projectBgColor
+projectBgColor=projectBgColor.toString(16)
+projectBgColor="#"+projectBgColor
 
+$(".sub-project-container").css("background-color",projectBgColor)
+$(".sub-project-container h3").css("font-weight","bold")
+projectPColor-=Math.floor(Math.random()*(256*256*256))
+projectPColor="#"+ projectPColor.toString(16)
+const allPInProjects= document.querySelectorAll(".sub-project-container p")
+ allPInProjects.forEach(element=>element.style.color=projectPColor)
+
+
+
+// $("h1");// document.querySelector("h1")
+// $("button")  //  document.querySelectorAll("button")
+// $("h1").css("color","#ffff00"); //document.querySelector("h1").style.color="#FFFF00"
+// $("h1").addClass("big-title") // document.querySelector("h1").classList.add("big-title")
+// $("h1").removeClass("big-title") // document.querySelector("h1").classList.remove("big-title")
+// $("h1").addClass("big-title margin-50")//to add multiple classes
+// console.log($("h1").hasClass("margin-50"))// to check whether it has margin-50 or not
+// $("h1").text("Merhaba");//document.querySelector("h1").innerHTML="Merhaba"
+// $("button").text("Don't click me") // document.querySelectorAll("button").forEach(element=>element.innerHTML="Don't click me!")
+// $("button").html("<i>click me<i>")// the same with text but you can add html tags 

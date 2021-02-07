@@ -90,7 +90,7 @@ section.find-A-Project div.container{
 .find-A-Project p{
    margin: 15px;
 }
-.row{
+.find-A-Project .row{
     margin-top: 5px;
 }
 .row select{
@@ -106,6 +106,30 @@ section.find-A-Project div.container{
 .a{
     display: none !important;
 }
+/* PROJECTS-GALLERY */
+section.projects-gallery{
+    padding:3.5%;
+}
+.project a{
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
+.project a:hover{
+    text-decoration: none;
+}
+.sub-project-container{
+    margin: 5px;
+}
+.sub-project-container *{
+    margin: 10px;
+}
+.sub-project-container img{
+    width: 100%;
+    margin: 0;
+
+}
+
+
 
 /* MEDIA QUERY */
 /* MEDIUM SCREEN */
