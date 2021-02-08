@@ -128,6 +128,23 @@ section.projects-gallery{
     margin: 0;
 
 }
+/* FOOOTER */
+footer.footer{
+   text-align: center;
+   font-size: 2rem;
+   padding-bottom:15px ;
+   color:rgb(153,153,153);
+}
+footer a{
+    color:rgb(153,153,153);
+}
+footer a:hover{
+    background-color: rgb(153,153,153);
+    color: #FFF;
+}
+footer p{
+    display: inline;
+}
 
 
 

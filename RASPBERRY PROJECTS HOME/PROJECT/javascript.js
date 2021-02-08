@@ -55,6 +55,44 @@ const allPInProjects= document.querySelectorAll(".sub-project-container p")
  allPInProjects.forEach(element=>element.style.color=projectPColor)
 
 
+ //adding marging
+$(".sub-project-container").css("padding","10px");
+//footer
+$("footer").addClass("footer")
+
+///Footer PAge counter
+var count=1;
+document.querySelector(".left").addEventListener("click",buttonClickedLeft)
+function buttonClickedLeft(){
+    count--;
+    console.log(count)
+    let myFooterP=document.querySelector("#element")
+    if(!count<=0){
+    myFooterP.innerHTML="Page "+count+" of 9"
+    document.querySelector(".left").style.opacity="1"
+    }else if(count==0) {
+        document.querySelector(".left").style.opacity="0"
+    }
+    
+}
+document.querySelector(".right").addEventListener("click",buttonClickedRight)
+function buttonClickedRight(){
+    count++;
+    console.log(count)
+    let myFooterP=document.querySelector("#element")
+    if(!count>=9){
+        myFooterP.innerHTML="Page "+count+" of 9"
+        }else if(count==9) {
+            document.querySelector(".left").style.opacity="0.3"
+        }
+        
+    
+}
+
+
+
+
+// $("footer p").css("font-size","2rem")
 
 // $("h1");// document.querySelector("h1")
 // $("button")  //  document.querySelectorAll("button")
