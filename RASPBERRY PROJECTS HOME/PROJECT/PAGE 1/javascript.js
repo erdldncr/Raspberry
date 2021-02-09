@@ -62,14 +62,21 @@ $("footer").addClass("footer")
 
 ///Footer PAge counter
 var count=1;
+console.log(count)
+// var urlOfPage="../PAGE "+count+"/index.html"
 document.querySelector(".left").addEventListener("click",buttonClickedLeft)
 function buttonClickedLeft(){
-    count--;
+   
     console.log(count)
     let myFooterP=document.querySelector("#element")
-    if(!count<=0){
+    // myFooterP.innerHTML="Page "+count+" of 9"
+    if(count!=1){
+    count--;
     myFooterP.innerHTML="Page "+count+" of 9"
     document.querySelector(".left").style.opacity="1"
+   
+    var urlOfPage="../PAGE "+count+"/index.html"
+    document.querySelector(".left-a").setAttribute("href",urlOfPage)
     }else if(count==0) {
         document.querySelector(".left").style.opacity="0"
     }
@@ -77,18 +84,27 @@ function buttonClickedLeft(){
 }
 document.querySelector(".right").addEventListener("click",buttonClickedRight)
 function buttonClickedRight(){
-    count++;
+    
     console.log(count)
     let myFooterP=document.querySelector("#element")
-    if(!count>=9){
+    if(count!=9){
+        count++;
         myFooterP.innerHTML="Page "+count+" of 9"
         }else if(count==9) {
-            document.querySelector(".left").style.opacity="0.3"
+            document.querySelector(".left").style.opacity="0"
         }
         
     
 }
 
+
+// function buttonAnimation(currentKey){
+//     var active=document.querySelector("."+currentKey)
+//     active.classList.toggle("pressed")
+    // setTimeout(function(){
+    //         active.classList.toggle("pressed")
+    // },100)
+    // }
 
 
 
