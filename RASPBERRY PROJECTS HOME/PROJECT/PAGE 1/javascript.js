@@ -69,14 +69,14 @@ function buttonClickedLeft(){
    
     console.log(count)
     let myFooterP=document.querySelector("#element")
-    // myFooterP.innerHTML="Page "+count+" of 9"
+
     if(count!=1){
     count--;
     myFooterP.innerHTML="Page "+count+" of 9"
     document.querySelector(".left").style.opacity="1"
    
-    var urlOfPage="../PAGE "+count+"/index.html"
-    document.querySelector(".left-a").setAttribute("href",urlOfPage)
+    // var urlOfPage="../PAGE "+count+"/index.html"
+    // document.querySelector(".left-a").setAttribute("href",urlOfPage)
     }else if(count==0) {
         document.querySelector(".left").style.opacity="0"
     }
@@ -90,12 +90,42 @@ function buttonClickedRight(){
     if(count!=9){
         count++;
         myFooterP.innerHTML="Page "+count+" of 9"
+        // var urlOfPage="../PAGE "+count+"/index.html"
+        // document.querySelector(".right-a").setAttribute("href",urlOfPage)
         }else if(count==9) {
             document.querySelector(".left").style.opacity="0"
         }
         
     
 }
+
+function next(nextClicked){
+    if(count!=9){
+    nextClicked.setAttribute("target","_blank")
+    var urlOfPage="../PAGE "+count+"/index.html"
+   return nextClicked.setAttribute("href",urlOfPage)
+    }else{
+        nextClicked.setAttribute("target","_self")
+    }
+}
+function back(nextClicked){
+    if(count!=1){
+        nextClicked.setAttribute("target","_blank")
+    var urlOfPage="../PAGE "+count+"/index.html"
+   return nextClicked.setAttribute("href",urlOfPage)
+    }else{
+        nextClicked.setAttribute("target","_self")
+    }
+}
+
+
+// document.querySelector(".left-a").setAttribute("href",'../PAGE 1/index.html')
+// console.log(document.querySelector("footer a"))
+// function nextPage(){
+ 
+//     var urlOfPage="../PAGE "+count+"/index.html"
+//     return document.querySelector(".right a").setAttribute("href",urlOfPage)
+// }
 
 
 // function buttonAnimation(currentKey){
