@@ -53,6 +53,20 @@ projectPColor-=Math.floor(Math.random()*(256*256*256))
 projectPColor="#"+ projectPColor.toString(16)
 const allPInProjects= document.querySelectorAll(".sub-project-container p")
  allPInProjects.forEach(element=>element.style.color=projectPColor)
+////////////////////////////Filtering Nav Bar//////////////////
+function filter(selectedDropDown){
+  let selectedOption= selectedDropDown.options[selectedDropDown.selectedIndex].value
+  let selectedOptionProjects=document.querySelectorAll(".project")
+
+    
+}
+
+
+
+
+
+
+
 
 
  //adding marging

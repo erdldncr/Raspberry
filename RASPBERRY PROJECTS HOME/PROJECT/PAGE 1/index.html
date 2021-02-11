@@ -72,14 +72,14 @@
         <div class="row ">
             <p id="a" class="medium-dropdown">Find a Project:</p>
             
-                <select class="sub-medium-dropdown" name="any-topic" id="">
+                <select class="sub-medium-dropdown" name="any-topic" id="project-types" onchange='filter(this)'>
                     <option value="" selected>
                         Any Topic
                     </option>
-                    <option value="ET">Estonian</option>
-                    <option value="FJ">Fiji</option>
-                    <option value="FI">Finnish</option>
-                    <option value="FR">French</option>
+                    <option value="art">Art</option>
+                    <option value="game">Game</option>
+                    <option value="books">Books</option>
+                    <option value="cs">CyberSecurity</option>
                 </select>
                 <select class="sub-medium-dropdown" name="any-topic" id="">
                     <option value="" selected>
@@ -114,7 +114,7 @@
     <section class="projects-gallery">
         <div class="container">
             <div class="row">
-                <div class="project col-lg-4 col-sm-12">
+                <div class="project art col-lg-4 col-sm-12">
                     <a href="">
                         <div class="sub-project-container">
                             <img src="https://picsum.photos/100/50" alt="">
@@ -124,7 +124,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="project col-lg-4 col-sm-12">
+                <div class="project art col-lg-4 col-sm-12">
                     <a href="">
                         <div class="sub-project-container">
                             <img src="https://picsum.photos/100/50" alt="">
