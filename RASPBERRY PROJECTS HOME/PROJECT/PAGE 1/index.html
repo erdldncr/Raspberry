@@ -81,16 +81,16 @@
                     <option value="books">Books</option>
                     <option value="cs">CyberSecurity</option>
                 </select>
-                <select class="sub-medium-dropdown" name="any-topic" id="">
+                <select class="sub-medium-dropdown" name="any-topic" id="" onchange='filter(this)'>
                     <option value="" selected>
                         Any Hardware
                     </option>
-                    <option value="ET">Estonian</option>
-                    <option value="FJ">Fiji</option>
-                    <option value="FI">Finnish</option>
-                    <option value="FR">French</option>
+                    <option value="raspberryPi">Raspberry Pi</option>
+                    <option value="flashDisk">Fiji</option>
+                    <option value="cD">Finnish</option>
+                    <option value="dVD">French</option>
                 </select>
-                <select class="sub-medium-dropdown" name="any-topic" id="">
+                <select class="sub-medium-dropdown" name="any-topic" id="" onchange='filter(this)'>
                     <option value="" selected>
                         Any software
                     </option>
@@ -99,7 +99,7 @@
                     <option value="FI">Finnish</option>
                     <option value="FR">French</option>
                 </select>
-                <select class="sub-medium-dropdown" name="any-topic" id="">
+                <select class="sub-medium-dropdown" name="any-topic" id="" onchange='filter(this)'>
                     <option value="" selected>
                         Any level
                     </option>
@@ -114,7 +114,7 @@
     <section class="projects-gallery">
         <div class="container">
             <div class="row">
-                <div class="project art col-lg-4 col-sm-12">
+                <div class="project game col-lg-4 col-sm-12">
                     <a href="">
                         <div class="sub-project-container">
                             <img src="https://picsum.photos/100/50" alt="">
@@ -124,17 +124,49 @@
                         </div>
                     </a>
                 </div>
-                <div class="project art col-lg-4 col-sm-12">
+                <div class="project  art col-lg-4 col-sm-12">
                     <a href="">
                         <div class="sub-project-container">
                             <img src="https://picsum.photos/100/50" alt="">
-                            <h3>3D Bug</h3>
-                            <p>Design a 3D printable bug insect with BlocksCad </p>
+                            <h3>3D key ring</h3>
+                            <p> Design a CODER keyring that can be 3D printed.</p>
                             <p>3D Printer, BlocksCAD, Web Browser</p>
                         </div>
                     </a>
                 </div>
-                <div class="project col-lg-4 col-sm-12">
+                <div class="project books col-lg-4 col-sm-12">
+                    <a href="">
+                        <div class="sub-project-container">
+                            <img src="https://picsum.photos/100/50" alt="">
+                            <h3>3D Pendant</h3>
+                            <p>Design a Pendant to 3D print and wear </p>
+                            <p>3D Printer, BlocksCAD, Web Browser</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="project cs col-lg-4 col-sm-12">
+                    <a href="">
+                        <div class="sub-project-container">
+                            <img src="https://picsum.photos/100/50" alt="">
+                            <h3>3D-Printed Astro Pi flight case</h3>
+                            <p> Use a 3D printer to create your very own Astro Pi flight case like the ones on the ISS </p>
+                            <p>3D Printer, BlocksCAD, Web Browser</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project raspberryPi col-lg-4 col-sm-12">
+                    <a href="">
+                        <div class="sub-project-container">
+                            <img src="https://picsum.photos/100/50" alt="">
+                            <h3>About me</h3>
+                            <p>Use the Python programming language to create pictures out of text</p>
+                            <p> Python </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project flashDisk col-lg-4 col-sm-12">
                     <a href="">
                         <div class="sub-project-container">
                             <img src="https://picsum.photos/100/50" alt="">
@@ -146,7 +178,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="project col-lg-4 col-sm-12">
+                <div class="project cD col-lg-4 col-sm-12">
                     <a href="">
                         <div class="sub-project-container">
                             <img src="https://picsum.photos/100/50" alt="">
@@ -156,39 +188,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="project col-lg-4 col-sm-12">
-                    <a href="">
-                        <div class="sub-project-container">
-                            <img src="https://picsum.photos/100/50" alt="">
-                            <h3>3D Bug</h3>
-                            <p>Design a 3D printable bug insect with BlocksCad </p>
-                            <p>3D Printer, BlocksCAD, Web Browser</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="project col-lg-4 col-sm-12">
-                    <a href="">
-                        <div class="sub-project-container">
-                            <img src="https://picsum.photos/100/50" alt="">
-                            <h3>3D Bug</h3>
-                            <p>Design a 3D printable bug insect with BlocksCad </p>
-                            <p>3D Printer, BlocksCAD, Web Browser</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="project col-lg-4 col-sm-12">
-                    <a href="">
-                        <div class="sub-project-container">
-                            <img src="https://picsum.photos/100/50" alt="">
-                            <h3>3D Bug</h3>
-                            <p>Design a 3D printable bug insect with BlocksCad </p>
-                            <p>3D Printer, BlocksCAD, Web Browser</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="project col-lg-4 col-sm-12">
+                <div class="project dVD col-lg-4 col-sm-12">
                     <a href="">
                         <div class="sub-project-container">
                             <img src="https://picsum.photos/100/50" alt="">

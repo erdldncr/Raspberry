@@ -55,10 +55,18 @@ const allPInProjects= document.querySelectorAll(".sub-project-container p")
  allPInProjects.forEach(element=>element.style.color=projectPColor)
 ////////////////////////////Filtering Nav Bar//////////////////
 function filter(selectedDropDown){
-  let selectedOption= selectedDropDown.options[selectedDropDown.selectedIndex].value
-  let selectedOptionProjects=document.querySelectorAll(".project")
-
-    
+    const x=selectedDropDown.options[selectedDropDown.options.selectedIndex].value
+   
+    document.querySelectorAll(".projects-gallery .project").forEach(option=>{
+       
+       if(!option.classList.contains(x)){
+           option.classList.add("filter")
+        
+       }else{
+        option.classList.remove("filter")
+       }
+    })
+   
 }
 
 
