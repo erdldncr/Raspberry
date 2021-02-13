@@ -59,11 +59,12 @@ function filter(selectedDropDown){
    
     document.querySelectorAll(".projects-gallery .project").forEach(option=>{
        
-       if(!option.classList.contains(x)){
-           option.classList.add("filter")
-        
-       }else{
+        if(x=="empty"){
+            option.classList.remove("filter")
+        }else if(option.classList.contains(x)){
         option.classList.remove("filter")
+       }else{
+        option.classList.add("filter")
        }
     })
    
