@@ -1,0 +1,76 @@
+*{
+  margin: 0;
+  padding: 0;  
+}
+header{
+    background-color:  rgb(54,79,96);
+    color: #ffffff;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+.logo-pic{
+    color: #000000;
+    margin-right:10px;
+    font-size: 2rem;
+}
+header span{
+    position: relative;
+    bottom: 7px;
+}
+/* ////MAIN SECTION */
+main{
+    display: flex;
+    justify-items: center;
+    background-color: rgb(1,146,73);
+    padding: 5% 10%;
+}
+main form{
+    /* padding: 2% 4%; */
+    background-color: #ffffff;
+    width: 50%;
+    border-radius: 10px;
+    margin-right: 5%;
+   
+}
+label{
+    font-weight:bold;
+}
+input{
+    width: 100%;
+    padding: 1%;
+}
+.form-body{
+    padding: 2% 5%;
+}
+.text-center{
+    text-align: center;
+}
+h1.text-center{
+    margin: 30px;
+}
+p.text-center{
+    background-color: rgb(221,249,243);
+    padding: 20px;
+}
+main aside{
+    width: 50%;
+}
+@media only screen and (max-width: 1000px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        background-color: rgb(1,146,73);
+        padding: 5% 10%;
+    }
+    main form{
+        order: 2;
+        width: 100%;
+       
+    }
+    main aside{
+       order: 1;
+       width: 100%;
+    }
+
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <i class="logo-pic fab fa-raspberry-pi"></i><span>Your Account</span>
+    </header>
+    <main>
+    
+        <form action="">
+            <h1 class="text-center">Create an account</h1>
+            <p class="text-center">Do you already have an account? <a href="#">Log in</a>.</p>
+            <div class="form-body">
+                <section>
+                    <label for="fname">Full Name</label><br>
+                    <input type="text" id="fname">
+                </section>
+                <section>
+                    <label for="username">What should we call you?</label><br>
+                    <input type="text" id="username">
+                </section>
+                <section>
+                    <label for="email">Email</label><br>
+                    <input type="text" id="email">
+                </section>
+                <section>
+                    <label for="password">Password</label><span>Show</span><br>
+                    <input type="text" id="password">
+                    <p>At least 8 characters, we recommend using a <a href="#">password manager</a></p>
+                </section>
+                <section>
+                    <label for="postCode">Post Code</label><br>
+                    <input type="text" id="postCode">
+                    <p>This information helps us find clubs and support services local to your area</p>
+                </section>
+                <section>
+                    <label for="age">How Old are You?</label><br>
+                    <span><input type="radio" name="age" id="over13"> Over 13</span>
+                    <span><input type="radio" name="age" id="under13"> Under 13</span>
+                    <p>We need to know this so we can make sure that you're protected if you're a young person.</p>
+                </section>
+                <section>
+                    <label for="">Your data</label><br>
+                    <input type="checkbox" name="" id=""> I agree to the <a href="#">Terms and Conditions</a>.
+                </section>
+                <section>
+                    <button onclick="display()">Submit</button>
+                </section>
+            </div>
+        </form>
+        <aside>
+           <h2> Hello!</h2>
+            <p>Welcome to Raspberry Pi accounts.</p>
+            <p>We have all sorts of exciting things planned here in the near future, so while we are busy building, go ahead and create an account. You can manage your email subscriptions, sign up / log in to Code Club and our Projects site, and leave us some feedback. Enjoy!</p>
+        </aside>
+    </main>
+  <script src="./script.js"></script>  
+</body>
+</html>
