@@ -18,6 +18,9 @@ header span{
     bottom: 7px;
 }
 /* ////MAIN SECTION */
+section{
+    margin: 5px;
+}
 main{
     display: flex;
     justify-items: center;
@@ -35,10 +38,16 @@ main form{
 label{
     font-weight:bold;
 }
-input{
+input,select{
+    background-color: rgb(245,246,249);
     width: 100%;
-    padding: 1%;
+    padding: 2%;
 }
+
+input:focus{
+    outline: #000000;
+}
+
 .form-body{
     padding: 2% 5%;
 }
@@ -52,6 +61,11 @@ p.text-center{
     background-color: rgb(221,249,243);
     padding: 20px;
 }
+#show{
+    position: relative;
+    left: 70%;
+}
+
 main aside{
     width: 50%;
 }

@@ -35,9 +35,18 @@
                     <input type="text" id="email">
                 </section>
                 <section>
-                    <label for="password">Password</label><span>Show</span><br>
-                    <input type="text" id="password">
+                    <label for="password">Password</label><span id="show"><b>Show</b> </span><br>
+                    <input type="text" id="password" >
                     <p>At least 8 characters, we recommend using a <a href="#">password manager</a></p>
+                </section>
+                <section>
+                    <label for="country">Country</label><br>
+                    <select name="country" id="country">
+                        <option value="tr">Turkey</option>
+                        <option value="tr">Turkey</option>
+                        <option value="tr">Turkey</option>
+                        <option value="tr">Turkey</option>
+                    </select>
                 </section>
                 <section>
                     <label for="postCode">Post Code</label><br>
@@ -46,8 +55,8 @@
                 </section>
                 <section>
                     <label for="age">How Old are You?</label><br>
-                    <span><input type="radio" name="age" id="over13"> Over 13</span>
-                    <span><input type="radio" name="age" id="under13"> Under 13</span>
+                  <div  class="age"><input type="radio" name="age" id="over13"></div>
+                  <div  class="age"><input type="radio" name="age" id="under13"></div>
                     <p>We need to know this so we can make sure that you're protected if you're a young person.</p>
                 </section>
                 <section>

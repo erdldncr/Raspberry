@@ -1,12 +1,21 @@
 function User(fullname,username,email,password,postcode,age,aggrement){
-    this.fullname=fullname,
+    this._fullname=fullname,
     this.username=username,
     this.email=email,
     this._password="",
     this.postcode=postcode,
     this.age=age,
     this.aggrement=aggrement
-
+}
+Object.defineProperty(User.prototype,"fullname",{
+    set: function(value){
+        if(value.length<8){
+            this._fullname="invalid"
+        }else{
+            this._fullname=value
+        }
+    }
+})
 
 
 function display(){
@@ -25,4 +34,15 @@ function display(){
   
 }
 
+////addd hid-show to password input
+
+document.getElementById("show").addEventListener("click",function(){
+   if(document.getElementById("show").textContent=="Show"){
+       document.getElementById("password").setAttribute("type","text")
+    document.getElementById("show").innerHTML="<strong>Hide</strong>"
+   }else{
+    document.getElementById("password").setAttribute("type","password")
+    document.getElementById("show").innerHTML="<strong>Show</strong>"
+   }
+})
 
