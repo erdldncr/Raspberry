@@ -30,8 +30,8 @@ function display(){
     let firstName=fullname.split(" ")[0]
     firstName= new User(fullname,username,email,password,postcode,age,aggrement)
     console.log(firstName)
-
-  
+    
+    
 }
 
 ////addd hid-show to password input
@@ -44,5 +44,18 @@ document.getElementById("show").addEventListener("click",function(){
     document.getElementById("password").setAttribute("type","password")
     document.getElementById("show").innerHTML="<strong>Show</strong>"
    }
+   
+})
+///check age
+document.getElementsByName("age").forEach(item=>{item.addEventListener("click",function(){
+    User.age=item.attributes["id"].value
+    console.log(User.age)
+    if(item.attributes["id"].value=="under13"){
+      
+    window.location.href = "http://www.w3schools.com";
+    }
+})
+  
 })
 
+// User.age=document.getElementsByName("age")[0]

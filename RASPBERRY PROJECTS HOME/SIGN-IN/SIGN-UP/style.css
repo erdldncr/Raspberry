@@ -65,6 +65,17 @@ p.text-center{
     position: relative;
     left: 70%;
 }
+input[name='age']{
+    margin: 1%;
+    display: inline;
+    width: initial;
+}
+span.age{
+    margin: 2%;
+    padding: 5px 60px 5px 2px;
+    border: 1px solid  black;
+    border-radius: 5px;
+}
 
 main aside{
     width: 50%;
