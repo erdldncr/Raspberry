@@ -18,15 +18,16 @@ Object.defineProperty(User.prototype,"fullname",{
 })
 
 
+
 function display(){
     event.preventDefault()
-    const fullname=document.getElementById("fname").value
-    const username=document.getElementById("username").value
-    const email=document.getElementById("email").value
-    const password=document.getElementById("password").value
-    const postcode=document.getElementById("postCode").value
-    const age=document.getElementsByName("age")[0]
-    const aggrement=false
+    let fullname=document.getElementById("fname").value
+    let username=document.getElementById("username").value
+    let email=document.getElementById("email").value
+    let password=document.getElementById("password").value
+    let postcode=document.getElementById("postCode").value
+    let age=document.getElementsByName("age")[0]
+    let aggrement=document.querySelector("#agreement").checked
     let firstName=fullname.split(" ")[0]
     firstName= new User(fullname,username,email,password,postcode,age,aggrement)
     console.log(firstName)
@@ -57,5 +58,13 @@ document.getElementsByName("age").forEach(item=>{item.addEventListener("click",f
 })
   
 })
+document.querySelectorAll("span.age").forEach(item=>item.style="font-size:1.3rem;")
 
-// User.age=document.getElementsByName("age")[0]
+////Agremeent////
+document.querySelector("#agreement").style.width="initial"
+
+//Button
+const button=document.querySelector("button")
+button.textContent="Sign Up"
+button.style.borderRadius="5px"
+button.style.margin="10px"

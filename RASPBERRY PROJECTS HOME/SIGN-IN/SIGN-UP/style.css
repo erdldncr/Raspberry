@@ -76,16 +76,41 @@ span.age{
     border: 1px solid  black;
     border-radius: 5px;
 }
+button{
+    width: 100%;
+    padding: 2%;
+    color: #ffffff;
+    background-color: rgb(108,192,72);
+}
+button:hover{
+    background-color: #332121;
+}
 
 main aside{
     width: 50%;
+    position: relative;
+    top: 30px;
+    color: #ffffff;
 }
+.right,.left{
+    display: flex;
+    color: white;   
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2)
+
+}
+
+
 @media only screen and (max-width: 1000px) {
     main{
         display: flex;
         flex-direction: column;
         justify-items: center;
-        background-color: rgb(1,146,73);
+       
         padding: 5% 10%;
     }
     main form{
@@ -96,6 +121,7 @@ main aside{
     main aside{
        order: 1;
        width: 100%;
+       top: 0px;
     }
 
 }
