@@ -111,6 +111,159 @@ main{
     color: #0000ff;
 }
 
+
+/* big-project */
+
+.big-project{
+    flex-direction: column;
+    
+}
+.big-project-context{
+    width: 100%;
+    padding: 10% 5% 10% 5%;
+}
+
+.big-project button{
+        background-color: rgb(252,246,126);
+        padding: 5px 15px;
+        text-align: center;
+        font-size: 1.2rem;
+        border-radius: 10px;
+    
+}
+
+.big-project button:hover{
+    background-color: rgb(42,63,79);
+    color: #fff;
+    cursor: grab;
+}
+
+
+.big-project-image img{
+    width: 90%;
+    position: relative;
+    top: 22%;
+    left: 8%;
+ } 
+
+}
+
+
+/* //////////// */
+
+
+
+/* code-club-syllabus */
+.row{
+    margin-bottom: 50px;
+}
+.row img{
+    max-width: 100%;
+ 
+}
+.scratch{
+  
+    padding: 0;
+    margin: 0px;
+}
+.scratch div{
+    margin: 10px;
+      background-color: #fff;
+}
+.scratch ul{
+    list-style-type: none;
+}
+.scratch li{
+    padding: 3%;
+}
+
+.template{
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.scratch p{
+    padding: 5%;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.scratch a{
+    color: #000000;
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.scratch a:hover{
+    color: #000;
+    text-decoration: none;
+    background-color: hsl(60, 100%, 70%)
+}
+.scratch a li:hover{
+    background-color: hsl(60, 100%, 70%)
+}
+.scratch-header{
+    background-color: rgb(255, 177, 42);
+
+}
+.html-css-header{
+    background-color: rgb(1,72,129);
+}
+.html-css-list{
+    padding-bottom:27%;
+}
+.python-header{
+  background-color:rgb(83,206,98);
+}
+.python-list{
+    padding-bottom: 13% ;
+}
+.raspberry-header{
+    background-color: rgb(243,82,79);
+}
+.sense-hat-header{
+    background-color: rgb(82,207,98);
+}
+.sense-hat-list{
+    padding-bottom: 4%;
+}
+.sonic-pi-header{
+    background-color: rgb(184,92,168);
+}
+.sonic-pi-list{
+    padding-bottom: 4%;
+}
+/* BROWSE-SECTION */
+section.browse-more{
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(245,246,249);
+}
+
+section.browse-more h4{
+    width: 60%;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+   
+.browse-more button{
+    background-color: rgb(252,246,126);
+    padding: 3px 15px;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    margin: 20px;
+
+}
+.browse-more button:hover{
+background-color: rgb(42,63,79);
+color: #fff;
+cursor: grab;
+}
 /* MEDIA QUERY */
 /* MEDIUM SCREEN */
 @media only screen and (max-width: 1000px){
@@ -184,39 +337,4 @@ main{
     display: grid;
     grid-template-columns: auto auto;
     
-}
-/* big-project */
-
-.big-project{
-    flex-direction: column;
-    
-}
-.big-project-context{
-    width: 100%;
-    padding: 10% 5% 10% 5%;
-}
-
-.big-project button{
-        background-color: rgb(252,246,126);
-        padding: 5px 15px;
-        text-align: center;
-        font-size: 1.2rem;
-        border-radius: 10px;
-    
-}
-
-.big-project button:hover{
-    background-color: rgb(42,63,79);
-    color: #fff;
-    cursor: grab;
-}
-
-
-.big-project-image img{
-    width: 90%;
-    position: relative;
-    top: 22%;
-    left: 8%;
- } 
-
 }
