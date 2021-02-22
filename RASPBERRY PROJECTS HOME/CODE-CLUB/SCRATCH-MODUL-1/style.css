@@ -1,0 +1,206 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* // HEADER// */
+header{
+    padding: 10px;
+}
+ header .container{
+    margin: 0px;
+    padding: 0;
+    width: 100%;
+}
+header .logo{
+    font-size: 1.9rem;
+    margin:0;
+  
+}
+
+header hr{
+border-top: 2px solid black; 
+transform: rotate(90deg);
+width: 2.5rem;
+margin: 0 5px;
+position: relative;
+left: 10px;
+top: -20px;    
+}
+header div.row{
+    margin-bottom: 0px;
+}
+.navbar-logo{
+    display: flex;
+}
+.navbar{
+    padding: 10px 0 0;
+}
+.navbar li{
+    display: inline-block;
+    margin-right: 10px;
+}
+.navbar a{
+    font-size: 1.1rem;
+    
+}
+.navbar a:hover{
+    color: rgb(186,239,255);
+    text-decoration: none;
+}
+.small-menu a{
+    font-weight: bolder;
+    color: black;
+}
+.large-menu a{
+    color: gray;
+}
+.language{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+div.date{
+    position: relative;
+    left: 200px;
+    font-size: smaller;
+}
+
+.language select{
+    padding: 1px 30px 1px 5px ;
+    border-radius: 5px;
+    position: relative;
+    top:0px;
+    
+}
+/* MAIN */
+main{
+    background-color: rgb(230,230,230);
+
+  
+}
+
+/* INTRO SECTION */
+
+/* MEDIA QUERY */
+/* MEDIUM SCREEN */
+@media only screen and (max-width:750px){
+    header{
+        flex-direction: column;
+    }
+    div.date{
+        display: none;
+    }
+    .language select{
+        padding: 10px;
+        width: 100%;
+        position: relative;
+        top:10px;
+      }
+      .navbar li{
+        margin-right: 25px;
+    }  
+    /* SECTION-1 */
+    .code-club-intro-context{
+        margin: 10px;
+        font-family: serif;
+        max-width: 100%;
+        font-size:1.2rem;
+        text-align: center;
+        padding:2% 12% 2%;
+    }
+    .options ul{
+        padding: 0 20% 0 20%;
+    }
+    .options li{
+        display: block;
+        /* margin: 3%; */
+        background-color: #fff;
+        padding-left: 5%;
+        text-align: left;
+}
+
+/* SMALL SCREEN */
+@media only screen and (max-width: 770px) {
+    header{
+        flex-direction: column;
+      
+    }
+    .logo hr{
+        left:25px;
+        top:-25px;
+        
+    }
+    .logo .logo-link:hover{
+        color: red !important;
+    }
+    .logo .logo-pic{
+        height: 70%;
+        font-size: 3rem;
+        margin-right: 10px;
+        color:#ffff00;
+    }
+    .navbar ul{
+        position: relative;
+        right: 70px;
+        top:5px
+    }
+    .navbar li{
+        margin-right: 30px;
+    }
+   li.large-menu{
+       display: none;
+  }
+  .language{
+      margin: 5px 5px;
+  }
+  div.date{
+      display: none;
+  }
+  .language select{
+    padding: 10px;
+    width: 100%;
+  }
+  /* SECTION-1 */
+  .section-1-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    
+}
+/* big-project */
+
+.big-project{
+    flex-direction: column;
+    
+}
+.big-project-context{
+    width: 100%;
+    padding: 10% 5% 10% 5%;
+}
+
+.big-project button{
+        background-color: rgb(252,246,126);
+        padding: 5px 15px;
+        text-align: center;
+        font-size: 1.2rem;
+        border-radius: 10px;
+    
+}
+
+.big-project button:hover{
+    background-color: rgb(42,63,79);
+    color: #fff;
+    cursor: grab;
+}
+
+
+.big-project-image img{
+    width: 90%;
+    position: relative;
+    top: 22%;
+    left: 8%;
+ } 
+
+} 
